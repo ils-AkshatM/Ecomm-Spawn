@@ -55,7 +55,7 @@ const Header = () => {
               <img src={logo} alt="logo" />
               <div>
                 <h1>Spawn</h1>
-                <p>Since 2023</p>
+                {/* <p>Since 2023</p> */}
               </div>
             </div>
 
