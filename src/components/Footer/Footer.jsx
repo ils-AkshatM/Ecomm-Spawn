@@ -56,7 +56,7 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to='/cart'>Cart</Link>
+                  <Link to='/about'>About</Link>
                 </ListGroupItem>
                 
                 <ListGroupItem className='ps-0 border-0'>
@@ -64,7 +64,7 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className='ps-0 border-0'>
-                  <Link to='#'>Privacy Policy</Link>
+                  <Link to='/privacypolicy'>Privacy Policy</Link>
                 </ListGroupItem>
               </ListGroup>
             </div>            
