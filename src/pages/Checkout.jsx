@@ -4,7 +4,7 @@ import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
 
 import "../styles/checkout.css";
-import { UseSelector, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { motion } from 'framer-motion';
 
 const Checkout = () => {
