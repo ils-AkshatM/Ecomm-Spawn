@@ -10,6 +10,7 @@ import Signup from '../pages/Signup';
 import About from '../pages/About';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import Contact from '../pages/Contact';
+import ProtectedRoute from './ProtectedRoute';
 
 const Routers = () => {
   return (
@@ -19,7 +20,9 @@ const Routers = () => {
         <Route path='shop' element= {<Shop/>} />
         <Route path='shop/:id' element= {<ProductDetails/>} />
         <Route path='cart' element= {<Cart/>} />
-        <Route path='checkout' element= {<Checkout/>} />
+        <Route path='checkout' element= {<ProtectedRoute>
+          <Checkout />
+        </ProtectedRoute>} />
         <Route path='login' element= {<Login/>} />
         <Route path='signup' element= {<Signup/>} />
         <Route path='about' element= {<About/>} />
