@@ -1,4 +1,4 @@
-import React,{ useState } from 'react';
+import React,{ useEffect, useState } from 'react';
 
 import CommonSection from '../components/UI/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
@@ -13,7 +13,7 @@ import ProductsList from '../components/UI/ProductsList';
 const Shop = () => {
 
   const [productsData, setProductsData] = useState(products);
-  const [sortOrder, setSortOrder] = useState('ascending');
+  const [sortOrder, setSortOrder] = useState('');
 
   const handleFilter = e =>{
     const filterValue = e.target.value;
@@ -66,14 +66,14 @@ const Shop = () => {
 
     setProductsData(searchedProducts)
   }
-  const handleSort = (e) => {
-    const selectedSortOrder = e.target.value;
-    setSortOrder(selectedSortOrder);
+  
 
-    const sortedProducts = [...productsData].sort((a, b) => {
-      if (selectedSortOrder === 'ascending') {
+  useEffect(() => {
+    const handleSort = (order) => {
+      const sortedProducts = [...productsData].sort((a, b) => {
+      if (order === 'ascending') {
         return a.productName.localeCompare(b.productName);
-      } else if (selectedSortOrder === 'descending') {
+      } else if (order === 'descending') {
         return b.productName.localeCompare(a.productName);
       }
       return 0;
@@ -81,6 +81,8 @@ const Shop = () => {
 
     setProductsData(sortedProducts);
   };
+    handleSort(sortOrder);
+  }, [productsData, sortOrder])
 
 
   return( 
@@ -104,7 +106,7 @@ const Shop = () => {
             </Col>
             <Col lg='3' md='6' className='text-end'>
               <div className="filter__widget">
-                <select onChange={handleSort}>
+                <select onChange={(e)=> setSortOrder(e.target.value)}>
                   <option>Sort By</option>
                   <option value="ascending">Ascending</option>
                   <option value="descending">Descending</option>
