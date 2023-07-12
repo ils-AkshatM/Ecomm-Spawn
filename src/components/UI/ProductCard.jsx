@@ -27,7 +27,7 @@ const addToCart = () => {
         <Col lg='3' md='4' className='mb-2'>
             <div className="product__item">
                 <div className="product__img">
-                    <motion.img whileHover={{ scale: 0.9 }} src={item.imgUrl} alt="" />
+                    <motion.img whileHover={{ scale: 0.9 }} src={item.imgUrl} alt="" width={300} height={300} />
                 </div>
                 <div className='p-2 product__info'>
                 <h3 className="product__name">
