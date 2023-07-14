@@ -11,6 +11,7 @@ import About from '../pages/About';
 import PrivacyPolicy from '../pages/PrivacyPolicy';
 import Contact from '../pages/Contact';
 import ProtectedRoute from './ProtectedRoute';
+import Wishlist from '../pages/Wishlist';
 
 const Routers = () => {
   return (
@@ -28,6 +29,7 @@ const Routers = () => {
         <Route path='about' element= {<About/>} />
         <Route path='privacypolicy' element= {<PrivacyPolicy/>} />
         <Route path='contact' element={<Contact/>} />
+        <Route path='wishlist' element={<Wishlist/>} />
     </Routes>
   )
 }
