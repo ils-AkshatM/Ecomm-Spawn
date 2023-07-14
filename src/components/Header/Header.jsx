@@ -19,7 +19,7 @@ const nav__links = [
   },
   {
     path: "shop",
-    display: "Shop",
+    display: "Products",
   },
   {
     path: "contact",
