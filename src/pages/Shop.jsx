@@ -69,7 +69,7 @@ const Shop = () => {
     <Helmet title="Shop">
       <CommonSection title="Products" />
 
-      <section>
+      <section className='shop'>
         <Container>
           <Row>
             <Col lg="3" md="6">

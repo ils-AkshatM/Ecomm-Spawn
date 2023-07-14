@@ -1,8 +1,12 @@
 .common__section {
-    background: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.562)),
-     no-repeat center center;
+    background: 
+        radial-gradient(
+        farthest-corner circle at 0% 0% in xyz, 
+        oklch(80% .4 222) 0%, oklch(39% 0.5 305) 32% 69%, oklch(80% 0.3 185) 100%
+        )no-repeat center center;
+     
     background-size: cover;
-    padding: 100px 0px;
+    padding: 55px 0px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,21 +1,16 @@
 import React, {useState, useEffect} from 'react';
-
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import products from '../assets/data/products';
-
 import '../styles/home.css';
 import Helmet from "../components/Helmet/Helmet";
-
 import { Container, Row, Col } from 'reactstrap';
 import heroImg from '../assets/images/hero-img.png';
-
 import Services from '../Services/Services';
 import ProductsList from '../components/UI/ProductsList';
-
 import Clock from '../components/UI/Clock';
-
 import counterImg from '../assets/images/counter-timer-img.png'
+import Carousel from 'react-bootstrap/Carousel';
 
 const Home = () => {
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -58,24 +53,68 @@ const Home = () => {
     <section className="hero__section">
       <Container>
         <Row>
-          <Col lg="6" md="6">
-            <div className="hero__content">
-              <p className="hero__subtitle">Trending products in {year}</p>
-              <h2>Make Your Interior More Minimalistic & Modern</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
-              </p>
-
-              <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
-                <Link to='/shop'>SHOP NOW</Link>
-              </motion.button>
-            </div>
-          </Col>
-
-          <Col lg="6" md="6">
-            <div className="hero__img">
-              <img src={heroImg} alt="Hero" />
-            </div>
+          <Col lg="12" >
+          <Carousel controls={false}>
+                <Carousel.Item>
+                  <div className="hero__content">
+                    <div className="hero__text-container">
+                      <div className="hero__text">
+                        <p className="hero__subtitle">Trending products in {year}</p>
+                        <h2>Make Your Interior More Minimalistic & Modern</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
+                        </p>
+                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                          <Link to='/shop'>SHOP NOW</Link>
+                        </motion.button>
+                      </div>
+                    </div>
+                    <div className="hero__img">
+                      <img src={heroImg} alt="Hero" />
+                    </div>
+                  </div>
+                </Carousel.Item>
+                {/* Replicate the above Carousel.Item structure for additional slides */}
+                <Carousel.Item>
+                <div className="hero__content">
+                    <div className="hero__text-container">
+                      <div className="hero__text">
+                        <p className="hero__subtitle">Trending products in {year}</p>
+                        <h2>Make Your Interior More Minimalistic & Modern</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
+                        </p>
+                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                          <Link to='/shop'>SHOP NOW</Link>
+                        </motion.button>
+                      </div>
+                    </div>
+                    <div className="hero__img">
+                      <img src={heroImg} alt="Hero" />
+                    </div>
+                  </div>
+                </Carousel.Item>
+                {/* Add more Carousel.Item for additional slides */}
+                <Carousel.Item>
+                <div className="hero__content">
+                    <div className="hero__text-container">
+                      <div className="hero__text">
+                        <p className="hero__subtitle">Trending products in {year}</p>
+                        <h2>Make Your Interior More Minimalistic & Modern</h2>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
+                        </p>
+                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                          <Link to='/shop'>SHOP NOW</Link>
+                        </motion.button>
+                      </div>
+                    </div>
+                    <div className="hero__img">
+                      <img src={heroImg} alt="Hero" />
+                    </div>
+                  </div>
+                </Carousel.Item>
+              </Carousel>
           </Col>
         </Row>
       </Container>
