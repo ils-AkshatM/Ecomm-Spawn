@@ -1,9 +1,8 @@
 .common__section {
-    background: 
-        radial-gradient(
-        farthest-corner circle at 0% 0% in xyz, 
-        oklch(80% .4 222) 0%, oklch(39% 0.5 305) 32% 69%, oklch(80% 0.3 185) 100%
-        )no-repeat center center;
+    /* background:  */
+    /* linear-gradient(to right, #67b26f, #4ca2cd) no-repeat center center; */
+    background: linear-gradient(to bottom, #0381d5, #6dd5fa, #ffffff);
+
      
     background-size: cover;
     padding: 55px 0px;

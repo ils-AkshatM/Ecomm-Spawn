@@ -43,7 +43,7 @@ const Contact = () => {
                 <div className="card-body">
                   <h2>Contact Form</h2>
                   <form onSubmit={handleSubmit}>
-                    <div className="form-group">
+                    <div className="form-group mt-4">
                       <label htmlFor="name">Name:</label>
                       <input
                         type="text"
@@ -90,7 +90,6 @@ const Contact = () => {
               <div className="map-container">
                 {/* Add your map component or embed a map */}
                 {/* For example: */}
-                
               </div>
             </section>
           </div>
