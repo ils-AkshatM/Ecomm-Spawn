@@ -54,7 +54,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col lg="12" >
-          <Carousel controls={false}>
+          <Carousel controls={false} className="carousel-container">
                 <Carousel.Item>
                   <div className="hero__content">
                     <div className="hero__text-container">

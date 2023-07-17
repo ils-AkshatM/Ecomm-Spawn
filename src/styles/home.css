@@ -1,10 +1,12 @@
 .hero__section{
     background: var(--hero-bg);
+    position: relative;
 }
 
 .hero__content {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .hero__content h2{
@@ -115,3 +117,8 @@
         margin-bottom: 40px;
     }
 }
+
+.carousel-indicators {
+    bottom: -40px;
+  }
+  
