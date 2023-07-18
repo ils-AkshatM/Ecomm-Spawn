@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     column-gap: 8px;
+    color: #6495ed;
 }
 
 .logo img{
@@ -25,7 +26,7 @@
 .logo h1{
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: #6495ed;
 }
 
 .menu{
@@ -62,7 +63,7 @@
     width: 15px;
     height: 15px;
     content: '';
-    background: var(--primary-color);
+    background: #6495ed;
     color: #fff;
     border-radius: 50px;
     display: flex;
@@ -115,6 +116,7 @@
 
 .nav__active {
     font-weight: 700 !important;
+    color: #6495ed;
 }
 
 
