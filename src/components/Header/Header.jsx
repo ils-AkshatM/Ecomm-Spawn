@@ -31,6 +31,7 @@ const Header = () => {
 
   const headerRef = useRef(null);
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
+  const totalWish = useSelector(state => state.wishlist.totalQuantity)
   const profileActionRef = useRef(null)
 
 
@@ -70,6 +71,9 @@ const Header = () => {
   const navigateToCart = () => {
     navigate('/cart'); 
   }
+  const navigateToWishlist = () => {
+    navigate('/wishlist'); 
+  }
 
   const toggleProfileActions = () => profileActionRef.current.classList.toggle("show__profileActions");
 
@@ -103,9 +107,9 @@ const Header = () => {
             </div>
 
             <div className="nav__icons">
-              <span className="fav__icon">
+              <span className="fav__icon" onClick={navigateToWishlist}>
                 <i className="ri-heart-line"></i>
-                <span className="badge">1</span>
+                <span className="badge">{totalWish}</span>
               </span>
               <span className="cart__icon" onClick={navigateToCart}>
                 <i className="ri-shopping-bag-line"></i>
