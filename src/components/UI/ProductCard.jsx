@@ -44,6 +44,7 @@ const ProductCard = ({ item, isWishlistPage }) => {
 
   const addToWishlist = () => {
     setIsAddedToWishlist(true);
+    toast.success("Product Added to wishlist");
     dispatch(
       wishlistActions.addItem({
         id: item.id,
@@ -57,6 +58,7 @@ const ProductCard = ({ item, isWishlistPage }) => {
 
   const removeFromWishlist = () => {
     setIsAddedToWishlist(false);
+    toast.error("Product Removed from Wishlist");
     dispatch(wishlistActions.removeItem(item.id));
   };
 
