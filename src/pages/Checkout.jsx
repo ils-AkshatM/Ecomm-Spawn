@@ -38,8 +38,7 @@ const Checkout = () => {
         autoClose: 3000, // Auto close the toast after 3 seconds
         hideProgressBar: true,
         closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
+        pauseOnHover: false,
         progress: undefined,
       });
     }
