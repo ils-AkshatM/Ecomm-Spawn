@@ -6,8 +6,10 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../redux/slices/cartSlice";
 import { wishlistActions } from "../../redux/slices/wishlistSlice";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const ProductCard = ({ item , isWishlistPage}) => {
+const ProductCard = ({ item, isWishlistPage }) => {
   const [isAddedToCart, setIsAddedToCart] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [isAddedToWishlist, setIsAddedToWishlist] = useState(false);
@@ -26,17 +28,18 @@ const ProductCard = ({ item , isWishlistPage}) => {
     );
   };
 
-  const removeFromCart = () => {
-    setIsAddedToCart(false);
-    dispatch(cartActions.removeItem(item.id));
-  };
-
   const decreaseQuantity = () => {
-    setQuantity(quantity - 1);
-  }
+    if (quantity === 1) {
+      toast.error("Product Removed");
+      setIsAddedToCart(false);
+    } else {
+      setQuantity(quantity - 1);
+    }
+  };
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
+    toast.success("Product Added to the Cart");
   };
 
   const addToWishlist = () => {
@@ -87,7 +90,11 @@ const ProductCard = ({ item , isWishlistPage}) => {
             )}
             {isAddedToCart ? (
               <div className="quantity">
-                <motion.span whileTap={{ scale: 1.2 }} onClick={decreaseQuantity}>
+                <motion.span
+                  whileTap={{ scale: 1.2 }}
+                  onClick={decreaseQuantity}
+                  className={quantity === 1 ? "disabled" : ""}
+                >
                   <i className="ri-subtract-line"></i>
                 </motion.span>
                 <span>{quantity}</span>

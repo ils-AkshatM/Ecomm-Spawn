@@ -29,6 +29,7 @@
 }
 .active__tab {
     font-weight: 600;
+    color: #a7c3f5;
 }
 
 .tab__content p {

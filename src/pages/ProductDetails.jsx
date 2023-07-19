@@ -89,7 +89,7 @@ const ProductDetails = () => {
                 </div>
                 <p className='mt-3'>{shortDesc}</p>
 
-                <motion.button whileTap={{ scale: 1.2 }} className='buy__btn' onClick={addToCart} >Add to Cart</motion.button>
+                <motion.button whileTap={{ scale: 1.2 }} className='btn btn-primary buy__btn' onClick={addToCart} >Add to Cart</motion.button>
               </div>
             </Col>
           </Row>
@@ -130,21 +130,21 @@ const ProductDetails = () => {
                             <input type="text" placeholder='Enter Name' ref={reviewUser} required />
                           </div>
 
-                          <div className="form__group d-flex align-items-center gap-5 rating__group">
+                          <div className="form__group d-flex align-items-center gap-3 rating__group">
                             <motion.span whileTap={{scale: 1.2}} onClick={()=> setRating(1)}>
-                              <i class='ri-star-s-fill'></i>
+                              <i class='ri-star-s-fill'></i>1
                               </motion.span>
                             <motion.span whileTap={{scale: 1.2}} onClick={()=> setRating(2)}>
-                              <i class='ri-star-s-fill'></i>
+                              <i class='ri-star-s-fill'></i>2
                               </motion.span>
                             <motion.span whileTap={{scale: 1.2}} onClick={()=> setRating(3)}>
-                              <i class='ri-star-s-fill'></i>
+                              <i class='ri-star-s-fill'></i>3
                               </motion.span>
                             <motion.span whileTap={{scale: 1.2}}  onClick={()=> setRating(4)}>
-                              <i class='ri-star-s-fill'></i>
+                              <i class='ri-star-s-fill'></i>4
                               </motion.span>
                             <motion.span whileTap={{scale: 1.2}}  onClick={()=> setRating(5)}>
-                              <i class='ri-star-s-fill'></i>
+                              <i class='ri-star-s-fill'></i>5
                               </motion.span>
                           </div>
 
