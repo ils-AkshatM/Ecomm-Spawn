@@ -147,7 +147,10 @@ const Home = () => {
     <section className="timer__count">
       <Container>
         <Row>
-          <Col lg='6' md='12' className='count__down-col'>
+        <Col lg='3' md='6' className='text-end counter__img'>
+            <img src={counterImg} alt="" />          
+          </Col>
+          <Col lg='4' md='8' className='count__down-col my-3'>
 
             <div className="clock__top-content">
               <h4 className='text-white fs-6 mb-2'>Limited Offers</h4>
@@ -155,13 +158,16 @@ const Home = () => {
             </div>
             <Clock />
 
-            <motion.button whileTap={{ scale: 1.2 }} className='buy__btn store__btn'>
+            
+          </Col>
+          <Col lg="2" md="4">
+          </Col>
+          <Col lg='3' md='6'>
+          <motion.button whileTap={{ scale: 1.2 }} className='buy__btn store__btn'>
               <Link to="/shop">Visit Store</Link>
             </motion.button>
           </Col>
-          <Col lg='6' md='12' className='text-end counter__img'>
-            <img src={counterImg} alt="" />          
-          </Col>
+          
         </Row>
       </Container>
     </section>
