@@ -28,7 +28,7 @@ const Checkout = () => {
 
                 
                 <FormGroup className='form__group'>
-                  <input type="email" placeholder='Enter your Email' />
+                  <input type="email" placeholder='Enter your Email (optional)' />
                 </FormGroup>
 
                 <FormGroup className='form__group'>
@@ -54,7 +54,9 @@ const Checkout = () => {
             </Col>
 
             <Col lg='4'>
+              <h3 className='mb-2'>Order Details</h3>
               <div className="checkout__cart">
+                
                 <h6>Total Qty: <span>{totalQty} items </span></h6>
                 <h6>Subtotal: <span>${totalAmount}</span></h6>
                 <h6><span>Shipping: <br /> 
