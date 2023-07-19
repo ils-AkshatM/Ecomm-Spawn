@@ -76,7 +76,7 @@ const Footer = () => {
               <ListGroup className='footer__contact'>
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>
                   <span><i class='ri-map-pin-line'></i></span>
-                  <p>123 HelloWorld, Indore, India</p>
+                  <p>Apollo Premier, Indore, India</p>
                 </ListGroupItem>
 
                 <ListGroupItem className='ps-0 border-0 d-flex align-items-center gap-2'>

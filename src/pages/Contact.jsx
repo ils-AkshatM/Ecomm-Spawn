@@ -30,11 +30,11 @@ const Contact = () => {
           <section className="contact-section col-lg-6">
             <div className="contact-info">
               <h4>Address:</h4>
-              <p className="mb-4">2880 Broadway, New York</p>
+              <p className="mb-4">Apollo Premier, Indore, India</p>
               <h4>Contact Number:</h4>
-              <p className="mb-4">+1 123-456-7890</p>
+              <p className="mb-4">+91 9685401702</p>
               <h4>Email:</h4>
-              <p className="mb-4">contact@example.com</p>
+              <p className="mb-4">a.maheshwari@thesynapses.com</p>
             </div>
           </section>
           <section className="col-lg-6">
@@ -88,12 +88,20 @@ const Contact = () => {
           <div className="col-lg-12">
             <section className="map-section">
               <div className="map-container">
-                {/* Add your map component or embed a map */}
-                {/* For example: */}
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.4144562371366!2d75.89420117517977!3d22.74999537936575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39630390e137d0d7%3A0x5bef82fe270e4409!2sApollo%20Premier!5e0!3m2!1sen!2sin!4v1689745914830!5m2!1sen!2sin"
+                  width="1200"
+                  height="450"
+                  style={{ border: 0 }}
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Map"
+                ></iframe>
               </div>
             </section>
           </div>
-        </div>  
+        </div>
       </div>
     </Helmet>
   );

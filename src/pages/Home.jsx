@@ -64,7 +64,7 @@ const Home = () => {
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
                         </p>
-                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                        <motion.button whileTap={{ scale: 1.2 }} className="btn btn-primary buy__btn">
                           <Link to='/shop'>SHOP NOW</Link>
                         </motion.button>
                       </div>
@@ -84,7 +84,7 @@ const Home = () => {
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
                         </p>
-                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                        <motion.button whileTap={{ scale: 1.2 }} className="btn btn-primary buy__btn">
                           <Link to='/shop'>SHOP NOW</Link>
                         </motion.button>
                       </div>
@@ -104,7 +104,7 @@ const Home = () => {
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nihil quidem voluptate enim deleniti. Vero ipsam nobis aspernatur error alias!
                         </p>
-                        <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
+                        <motion.button whileTap={{ scale: 1.2 }} className="btn btn-primary buy__btn">
                           <Link to='/shop'>SHOP NOW</Link>
                         </motion.button>
                       </div>
